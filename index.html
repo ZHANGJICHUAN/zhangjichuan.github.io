@@ -1,250 +1,323 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
 <title>張濟川</title>
-<link rel="shortcut icon" href="https://zhangjichuan.com/favicon.ico">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
-<link rel="stylesheet" href="https://zhangjichuan.com/media/css/tailwind.css">
-<link rel="stylesheet" href="https://zhangjichuan.com/styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="張濟川 - Atom Feed" href="https://zhangjichuan.com/atom.xml">
+<meta name="description" content="温故而知新">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    
+<link type='text/css' rel='stylesheet' href='https://zhangjichuan.com/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <meta name="description" content="温故而知新" />
+<script type="text/javascript" src='https://zhangjichuan.com/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
 </head>
-<body>
-  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
-  <div class="flex justify-end px-4">
-    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
-      <i class="ri-close-line" v-show="showMenu"></i>
-      <i class="ri-menu-3-line" v-show="!showMenu"></i>
-    </div>
-  </div>
-  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
-    
-      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        首页
-      </a>
-    
-      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        归档
-      </a>
-    
-      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        标签
-      </a>
-    
-      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-        关于
-      </a>
-    
-    <a href="https://zhangjichuan.com/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
-      RSS
-    </a>
-  </nav>
+<body>
+
+    <div class="layout theme-dark">
+
+        <div class="layout-header">
+
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+
+					<div class="navbar">
+
+						<div class="logo">
+							<a href="https://zhangjichuan.com">
+								<img class="logo"
+									src="https://zhangjichuan.com/media/images/site_avatar.png?v=1595125082903"
+									alt="">
+							</a>
+						</div>
+
+						<div class="menu d-md-inline-block d-none">
+							<ul class="layout-navigation-list">
+								
+								<li class="layout-navigation-item"><a title="首页"
+										href="/">首页</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="归档"
+										href="/archives">归档</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="标签"
+										href="/tags">标签</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="关于"
+										href="/post/about">关于</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="item d-md-inline-block d-none">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
+
+
+
+						<div class="d-md-inline-block d-none">
+							<div class="search-lightbox">
+								<div class="search-body">
+
+									<form id="gridea-search-form" data-update="1595125082903" action="/search/" class="search-form">
+										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
+										<button type="submit" class="submit" aria-label="Submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="nav d-md-none d-inline-block">
+							<div class="trigger">
+								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
+
+</div>
+        
+        <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="首页" href="/">首页</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="/archives">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="标签" href="/tags">标签</a></li>
+			
+			<li class="layout-collapse-item"><a title="关于" href="/post/about">关于</a></li>
+			
+
+		</ul>
+	</div>
 </div>
 
-    <div class="max-w-4xl w-full mx-auto ">
-      
-        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
-  <div class="flex-1 order-2 md:order-1 md:pr-16">
-    <div class="text-4xl font-bold text-center md:text-left">
-      張濟川
-    </div>
-    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
-      温故而知新
-    </div>
-    
-      <div class="mt-8 text-center md:text-left">
-        <a
-          href="/post/about" 
-          arget="_blank"
-          class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
-        >LET&#39;S TALK!</a>
-      </div>
-    
-    
-      <div class="mt-8 flex items-center">
-        
-          <div class="text-gray-500 mr-2">
-            Follow me 👉
-          </div>
-        
-        
-          
-            
-              <div class="relative mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 transition-fast dark:hover:bg-gray-600 wechat">
-                <i class="ri-wechat-line"></i>
-                <img src="\media\images\custom-wechat.jpg" alt="" class="absolute left-0 w-32" style="max-width: initial; top: 100%;" >
+        <div class="layout-banner">
+  <div class="layout-banner-main">
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-9">
+          <div class="banner">
+            <div class="banner-list row">
+              <div class="item col-12 col-sm-9">
+                
+                
+                <div class="banner-card main">
+                  <a class="card-content" href="https://zhangjichuan.com/post/guan-jia-po-yun-jin-xiao-cun-shi-pin-jiao-cheng/" style="background-image: url('http://www.csgrasp.com/Upload/157588157620.gif')">
+                    <div class="mask"></div>
+                    <div class="title">
+                      <h3 class="card-title">管家婆云进销存视频教程</h3>
+                    </div>
+                  </a>
+                </div>
+                
+                
+                
+                
+                
+                
+                
               </div>
+              <div class="col-12 col-sm-3">
+                <div class="row">
+                  
+                  
+                  
+                  
+                  <div class="item col-4 col-sm-12">
+                    <div class="banner-card">
+                      <a class="card-content" href="https://zhangjichuan.com/post/guan-jia-po-wang-dian-erp-shi-pin-jiao-cheng/"
+                        style="background-image: url('http://www.csgrasp.com/Upload/157588300131.gif')">
+                        <div class="mask"></div>
+                        <div class="title">
+                          <h3 class="card-title">管家婆网店ERP视频教程</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="item col-4 col-sm-12">
+                    <div class="banner-card">
+                      <a class="card-content" href="https://zhangjichuan.com/post/adb-ming-ling-ting-yong-google-fu-wu/"
+                        style="background-image: url('https://x0.ifengimg.com/res/2019/39625FD2CF365F02652F79D81A4E483AE8B3E29C_size40_w640_h427.jpeg')">
+                        <div class="mask"></div>
+                        <div class="title">
+                          <h3 class="card-title">adb命令 停用google服务</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="item col-4 col-sm-12">
+                    <div class="banner-card">
+                      <a class="card-content" href="https://zhangjichuan.com/post/hello-gridea/"
+                        style="background-image: url('https://zhangjichuan.com/post-images/hello-gridea.png')">
+                        <div class="mask"></div>
+                        <div class="title">
+                          <h3 class="card-title">Hello Gridea</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="layout-content">
+  <div class="layout-content-main">
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-9">
+          <div class="card-list">
             
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
             
-              <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=210663664&amp;site=qq&amp;menu=yes" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
-                <i class="ri-qq-line"></i>
-              </a>
             
+            
+            
+            
+            
+            
+            
+            
+            
+          </div>
+
           
-        
+
+        </div>
       </div>
-    
-  </div>
-  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
-    <img class="rounded-full object-cover" src="https://zhangjichuan.com/images/avatar.png?v=1586864207751" alt="張濟川" width="100%" height="100%">
-  </div>
-</header>
-      
-
-      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
-        
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://zhangjichuan.com/post/guan-jia-po-yun-jin-xiao-cun-shi-pin-jiao-cheng/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          管家婆云进销存视频教程
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2020-03-20</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        行业选择
-
-通用行业
-手机数码行业
-服装鞋帽行业
-食品医药行业
-
-常用
-
-单据中心、单据草稿	
-
-商品
-
-商品信息、SKU管理（第一部分）
-商品信息、SKU管理（第二部分）
-套餐管理
-
-进货
-
-进货业务
-
-批零
-
-线下批发业务
-零售业务
-促...
-      </div>
-      <a href="https://zhangjichuan.com/post/guan-jia-po-yun-jin-xiao-cun-shi-pin-jiao-cheng/" class="btn">
-        阅读更多
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://zhangjichuan.com/post/guan-jia-po-wang-dian-erp-shi-pin-jiao-cheng/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          管家婆网店ERP视频教程
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2020-02-24</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        行业选择
-
-通用行业
-手机数码行业
-服装鞋帽行业
-食品医药行业
-
-常用
-
-单据中心、单据草稿	
-
-商品
-
-商品信息、SKU管理（第一部分）
-商品信息、SKU管理（第二部分）
-套餐管理
-
-进货
-
-进货业务
-
-批零
-
-线下批发业务
-零售业务
-促...
-      </div>
-      <a href="https://zhangjichuan.com/post/guan-jia-po-wang-dian-erp-shi-pin-jiao-cheng/" class="btn">
-        阅读更多
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
-    
-    <div class="flex-1 order-2 md:order-1">
-      <h2 class="text-2xl font-semibold mb-4">
-        <a href="https://zhangjichuan.com/post/adb-ming-ling-ting-yong-google-fu-wu/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
-          adb命令 停用google服务
-        </a>
-      </h2>
-      <div class="mb-4 text-xs text-gray-500">2020-02-24</div>
-      <div class="mb-4 text-gray-500 dark:text-gray-300">
-        <p>下载adb程序<a href="http://file.zhangjichuan.com/2020/02/1580539394.zip">platform-tools_r28.0.3-windows.zip</a><br>
-cd c:adb<br>
-手机开发人员选项开启usb调试模式，连接电脑。</p>
-
-      </div>
-      <a href="https://zhangjichuan.com/post/adb-ming-ling-ting-yong-google-fu-wu/" class="btn">
-        阅读更多
-      </a>
-    </div>
-    
-  </div>
-  
-      </div>
-
-      
-      <footer class="py-12 text-center px-4 md:px-0" v-pre>
-  
-</footer>
-
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://zhangjichuan.com/media/scripts/main.js"></script>
+</div>
+
+
+<script type="text/javascript">
+  //点击加载更多
+  jQuery(document).ready(function ($) {
+    //点击下一页的链接(即那个a标签)
+    $(' .btn-paginator').click(function () {
+      $this = $(this);
+      $this.addClass('loading').text('正在加载'); //给a标签加载一个loading的class属性，用来添加加载效果
+      var href = $this.attr('href'); //获取下一页的链接地址
+      if (href != undefined) { //如果地址存在
+        $.ajax({ //发起ajax请求
+          url: href,
+          //请求的地址就是下一页的链接
+          type: 'get',
+          //请求类型是get
+          error: function (request) {
+            //如果发生错误怎么处理
+          },
+          success: function (data) { //请求成功
+            $this.removeClass('loading').text('加载更多'); //移除loading属性
+            var $res = $(data).find('.card'); //从数据中挑出文章数据，请根据实际情况更改
+            $('.card-list').append($res.fadeIn(
+              500)); //将数据加载加进posts-loop的标签中。
+            var newhref = $(data).find('.btn-paginator').attr('href'); //找出新的下一页链接
+            if (newhref != undefined) {
+              $('.btn-paginator').attr('href', newhref);
+            } else {
+              $('.btn-paginator').remove(); //如果没有下一页了，隐藏
+            }
+          }
+        });
+      }
+      return false;
+    });
+  });
+</script>
+
+        	<div class="layout-footer">
+
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+					<div class="footer">
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<div class="footer-copy">
+									
+									<span>© 1 </span>
+									<a href="https://zhangjichuan.com" title="張濟川">張濟川</a>
+									<span class="px-2">⋅</span>
+									
+									
+									<div class="footer-icp d-none d-sm-inline-block">
+										<span class="px-2">⋅</span>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 d-none d-md-block">
+								<div class="footer-links">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src='https://zhangjichuan.com/media/scripts/main.js'></script>
+	
+    </div>
 </body>
 
 </html>
