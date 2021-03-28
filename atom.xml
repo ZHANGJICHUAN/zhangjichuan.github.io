@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhangjichuan.com</id>
     <title>張濟川</title>
-    <updated>2020-09-05T11:57:21.290Z</updated>
+    <updated>2021-03-28T01:19:05.044Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhangjichuan.com"/>
     <link rel="self" href="https://zhangjichuan.com/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://zhangjichuan.com/images/avatar.png</logo>
     <icon>https://zhangjichuan.com/favicon.ico</icon>
-    <rights>All rights reserved 2020, 張濟川</rights>
+    <rights>All rights reserved 2021, 張濟川</rights>
     <entry>
         <title type="html"><![CDATA[adb命令 停用google服务]]></title>
         <id>https://zhangjichuan.com/post/adb-ming-ling-ting-yong-google-fu-wu/</id>
