@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://zhangjichuan.github.io</id>
+    <id>https://zhangjichuan.com</id>
     <title>張濟川</title>
-    <updated>2021-06-20T04:31:33.362Z</updated>
+    <updated>2021-06-20T04:34:31.443Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://zhangjichuan.github.io"/>
-    <link rel="self" href="https://zhangjichuan.github.io/atom.xml"/>
+    <link rel="alternate" href="https://zhangjichuan.com"/>
+    <link rel="self" href="https://zhangjichuan.com/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>https://zhangjichuan.github.io/images/avatar.png</logo>
-    <icon>https://zhangjichuan.github.io/favicon.ico</icon>
+    <logo>https://zhangjichuan.com/images/avatar.png</logo>
+    <icon>https://zhangjichuan.com/favicon.ico</icon>
     <rights>All rights reserved 2021, 張濟川</rights>
     <entry>
         <title type="html"><![CDATA[adb命令 停用google服务]]></title>
-        <id>https://zhangjichuan.github.io/post/adb-ming-ling-ting-yong-google-fu-wu/</id>
-        <link href="https://zhangjichuan.github.io/post/adb-ming-ling-ting-yong-google-fu-wu/">
+        <id>https://zhangjichuan.com/post/adb-ming-ling-ting-yong-google-fu-wu/</id>
+        <link href="https://zhangjichuan.com/post/adb-ming-ling-ting-yong-google-fu-wu/">
         </link>
         <updated>2020-02-24T03:33:36.000Z</updated>
         <summary type="html"><![CDATA[<p>下载adb程序<a href="http://file.zhangjichuan.com/2020/02/1580539394.zip">platform-tools_r28.0.3-windows.zip</a><br>
@@ -50,8 +50,8 @@ adb shell pm enable</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://zhangjichuan.github.io/post/hello-gridea/</id>
-        <link href="https://zhangjichuan.github.io/post/hello-gridea/">
+        <id>https://zhangjichuan.com/post/hello-gridea/</id>
+        <link href="https://zhangjichuan.com/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
